@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background: #FEFFDE;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    color: #52734D;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.instruction {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #52734D;
+}
+
+.level-size {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #52734D;
+}
+
+.range {
+    height: 55px;
+    width: 330px;
+    background: #91C788;
+    border-radius: 10px;
+    padding: 0 25px;
+}
+
+.range .field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.range .field .value {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.range .field .value.left {
+    padding-right: 15px;
+}
+
+.range .field .value.right {
+    padding-left: 15px;
+}
+
+.range .field input {
+    -webkit-appearance: none;
+    height: 5px;
+    width: 100%;
+    background: #FEFFDE;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.range .field input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 15px;
+    border-radius: 5px;
+    background: #52734D;
+    cursor: pointer;
+}
+
+.slider-value {
+    width: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.button-play {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.button-play-link {
+    text-decoration: none;
+    padding: 10px 80px;
+    background: #91C788;
+    color: #52734D;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.button-play-link:hover {
+    background: #52734D;
+    color: #FEFFDE;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #52734D;
+    font-size: 16px;
+}
+
+.github-link {
+    font-weight: 700;
+    color: #52734D;
+}

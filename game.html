@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>игра для памяти </title>
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/game.css">
+    <script src="scripts/game.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="игра">
+        <div class="controls">
+            <button class="start"> начать </button>
+            <div class="stats">
+                <div class="moves">0 картинки </div>
+                <div class="time">время: 0 sec</div>
+            </div>
+            <button class="hint">просмотр</button>
+            <div class="hint-count">3</div>
+        </div>
+        <div class="game-board">
+            <div class="board" data-size="2"></div>
+            <div class="win"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">
+            Карточки для тренеровки памяти 
+        </h1>
+        <div class="instruction">
+            Размер игрового поля  :
+        </div>
+        <div class="controls">
+            <div class="level-size">
+                <div class="range">
+                    <div class="field">
+                        <div class="value left">4</div>
+                        <input type="range" min="4" max="10" value="6" step="2" oninput="changeSize();" />
+                        <div class="value right">10</div>
+                    </div>
+                </div>
+                <div class="slider-value">
+                    <span>6</span> × <span>6</span>
+                </div>
+            </div>
+            <div class="button-play">
+                <a href="game.html" class="button-play-link" onclick="setSize();">начать</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Дизайн разработал Музляев Никита , 2024 БГУИР
+    </div>
+</body>
+</html>
